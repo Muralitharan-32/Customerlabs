@@ -1,0 +1,137 @@
+.menu-bar {
+    background-color: rgb(26, 189, 204);
+    padding: 10px 25px;
+  }
+  
+  .menu-bar {
+    color: white;
+    /* border: none; */
+    padding: 30px;
+  }
+  
+  .save-button {
+    background-color: #c3d9c8;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start with a negative width to hide the sidebar */
+    width: 500px; /* Adjust the width as needed */
+    height: 100%;
+    overflow-y: auto;
+    transition: right 0.3s; /* Use 'right' property for the sliding effect */
+    background-color: white;
+    z-index: 1;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup.active {
+    right: 0; /* Slide the sidebar into view when active */
+  }
+  
+  .popup-sidebar {
+    background-color: rgb(26, 189, 204);
+    padding: 30px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.622); /* Semi-transparent background */
+    z-index: 0;
+  }
+  .custom-input {
+    border: 1px solid;
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Padding inside the input field */
+    font-size: 16px; /* Font size */
+    width: 60%; /* Full width */
+    margin-left: 3%;
+  }
+  
+  /* Optional: Style for input when focused */
+  .custom-input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #2264ff; /* Change border color when focused */
+    box-shadow: 0 0 5px #2277ff; /* Add a box shadow when focused */
+  }
+  .custom-select select {
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 12px; /* Padding inside the select box */
+    font-size: 16px; /* Font size */
+    width: 64%; /* Full width */
+    margin-left: 3%;
+  }
+  
+  /* Optional: Style for select when focused */
+  .custom-select select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #2256ff; /* Change border color when focused */
+    box-shadow: 0 0 5px #2264ff; /* Add a box shadow when focused */
+  }
+  .segment-label {
+    padding: 3%;
+  }
+  /* Style the indicators and text */
+  .traits-info {
+    display: flex; /* Use flexbox to align elements horizontally */
+    align-items: center; /* Center elements vertically */
+    margin-left: 40%;
+    padding: 4%;
+  }
+  
+  .traits-indicator {
+    width: 11px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .traits-indicator.red {
+    background-color: rgb(179, 35, 35);
+  }
+  
+  .traits-indicator.green {
+    background-color: rgb(155, 226, 140);
+  }
+  
+  .traits-text {
+    margin-right: 10px;
+  }
+  
+  /* Style the additional info text */
+  .additional-info {
+    padding: 3%;
+  }
+  .custom-success-button {
+    background-color: rgb(255, 255, 255); /* Green background color */
+    color: #ff0000; /* White text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Add a pointer cursor */
+    border-radius: 2px; /* Add rounded corners */
+    margin-left: 2%;
+  }
+  .btn-primary {
+    background-color: rgb(28, 181, 154); /* Green background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Add a pointer cursor */
+    border-radius: 2px; /* Add rounded corners */
+    margin-left: 2%;
+  }
+  
